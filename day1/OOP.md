@@ -51,11 +51,11 @@ Nó cho phép một class con có thể truy cập các thuộc tính cũng như
 
 Các loại kế thừa gồm có:
     
-    - kế thừa đơn (Single Inheritance): Một lớp con kế thừa từ một lớp cha duy nhất
-    - kế thừa đa (Multiple Inheritance): Một lớp con kế thừa từ nhiều hơn một lớp cha
-    - kế thừa bậc thang (Multilevel Inheritance): Một lớp con kế thừa từ một lớp cha, và lớp cha này lại kế thừa từ một lớp khác
-    - kế thừa phân cấp (Hierarchical Inheritance): Nhiều lớp con cùng kế thừa từ một lớp cha duy nhất
-    - kế thừa lai (Hybrid Inheritance): Là sự kết hợp của hai hoặc nhiều loại hình kế thừa kể trên
+- kế thừa đơn (Single Inheritance): Một lớp con kế thừa từ một lớp cha duy nhất
+- kế thừa đa (Multiple Inheritance): Một lớp con kế thừa từ nhiều hơn một lớp cha
+- kế thừa bậc thang (Multilevel Inheritance): Một lớp con kế thừa từ một lớp cha, và lớp cha này lại kế thừa từ một lớp khác
+- kế thừa phân cấp (Hierarchical Inheritance): Nhiều lớp con cùng kế thừa từ một lớp cha duy nhất
+- kế thừa lai (Hybrid Inheritance): Là sự kết hợp của hai hoặc nhiều loại hình kế thừa kể trên
 
 Ta quay lại với class nhân ciên ở mục trên 
 
