@@ -1,8 +1,11 @@
-class Employee(): 
+
+class Dog():
+
+    def __init__(self, name, age, coat_color):
+        self.name = name
+        self.age = age
+        self.coat_color = coat_color
     
-    def __init__(self, first_name, last_name, salary):
-        self.first = first_name
-        self.last = last_name
-        self.email = first_name + '.' + last_name + '@techlead.com'
-        self.salary = salary
+philo = Dog("Philo", 5, "brown")
+print(f"{philo.name}'s coat is {philo.coat_color}.")
 
