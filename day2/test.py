@@ -1,11 +1,49 @@
-def bubble_sort(arr):
-        n = len(arr)
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
-        for i in range(n):
-            for j in range(0, n-i-1):
-                if arr[j] > arr[j+1]:
-                    arr[j], arr[j+1] = arr[j+1], arr[j]
+def traverseAndPrint(head):
+    currentNode = head
+    while currentNode:
+        print(currentNode.data, end=" -> ")
+        currentNode = currentNode.next
+    print("null")
+
+def sortLinkedList(head):
+    current = head
+    index = None
+
+    if head is None:
+        return
+    
+    while current is not None:
+        index = current.next
         
-        return arr
+        while index is not None:
+            if current.data > index.data:
+                temp = current.data
+                current.data = index.data
+                index.data = temp
+            
+            index = index.next
+        current = current.next
 
-print(bubble_sort([1,2,5,4,67,7,65,32]))
+node1 = Node(7)
+node2 = Node(11)
+node3 = Node(3)
+node4 = Node(2)
+node5 = Node(9)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+
+print("Trước khi sắp xếp:")
+traverseAndPrint(node1)
+
+sortLinkedList(node1)
+
+print("Sau khi sắp xếp:")
+traverseAndPrint(node1)
