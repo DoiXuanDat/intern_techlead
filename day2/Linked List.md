@@ -38,6 +38,7 @@ Những thao tác ta có thể làm với link list là duyệt, xóa một node
     node4.next = node5
     print(Traversal(node1))
 
+
 - Xóa một node
 
     class Node:
@@ -60,10 +61,10 @@ Những thao tác ta có thể làm với link list là duyệt, xóa một node
         while currentNode.next and currentNode.next != nodeToDelete:
             currentNode = currentNode.next
 
-        if currentNode.next is None:
-            return head
+            if currentNode.next is None:
+                return head
 
-        currentNode.next = currentNode.next.next
+            currentNode.next = currentNode.next.next
 
         return head
 
@@ -89,31 +90,31 @@ Những thao tác ta có thể làm với link list là duyệt, xóa một node
 - Chèn một node 
 
     class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+        def __init__(self, data):
+            self.data = data
+            self.next = None
 
     def traverseAndPrint(head):
-    currentNode = head
-    while currentNode:
-        print(currentNode.data, end=" -> ")
-        currentNode = currentNode.next
-    print("null")
+        currentNode = head
+        while currentNode:
+            print(currentNode.data, end=" -> ")
+            currentNode = currentNode.next
+        print("null")
 
     def insertNodeAtPosition(head, newNode, position):
-    if position == 1:
-        newNode.next = head
-        return newNode
+        if position == 1:
+            newNode.next = head
+            return newNode
 
-    currentNode = head
-    for _ in range(position - 2):
-        if currentNode is None:
-        break
-        currentNode = currentNode.next
+        currentNode = head
+        for _ in range(position - 2):
+            if currentNode is None:
+            break
+            currentNode = currentNode.next
 
-    newNode.next = currentNode.next
-    currentNode.next = newNode
-    return head
+        newNode.next = currentNode.next
+        currentNode.next = newNode
+        return head
 
     node1 = Node(7)
     node2 = Node(3)
