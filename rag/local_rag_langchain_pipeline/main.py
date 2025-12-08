@@ -42,11 +42,9 @@ def create_rag_system(index_path, embedding_model='sentence-transformers/all-Min
         | llm
         | StrOutputParser()
     )
-    return rag_chain
-                                       
+    return rag_chain                       
 
 def get_answer(question, rag_chain):
-    # answer = rag_chain.run(question)
     return rag_chain.invoke({"question": question})
 
 if __name__ == '__main__':

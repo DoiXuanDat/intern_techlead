@@ -2,12 +2,13 @@ import os
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
+
 def load_text_file(text_folder):
     texts = []
     for file_name in os.listdir(text_folder):
         if file_name.endswith('.txt'):
             file_path = os.path.join(text_folder, file_name)
-            with open(file_path, 'r',encoding='utf-8') as file:
+            with open(file_path,'r',encoding='utf-8') as file:
                 texts.append(file.read())
     return texts
 
