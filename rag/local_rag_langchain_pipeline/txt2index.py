@@ -21,5 +21,4 @@ def create_faiss_index(text_folder, index_path, embedding_model='sentence-transf
 if __name__ ==  '__main__':
     text_folder = 'DataTxt'
     index_path = 'DataIndex'
-    create_faiss_index(text_folder, index_path)
-         
+    create_faiss_index(text_folder, index_path)  
